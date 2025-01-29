@@ -1,8 +1,8 @@
-package SortingAndSearching.선택정렬;
+package SortingAndSearching.삽입정렬;
 
 import java.util.*;
 
-public class Main2 {
+public class Main3 {
 
     public List<Integer> solution(int[] arr) {
         List<Integer> list = new LinkedList<>();
@@ -22,7 +22,7 @@ public class Main2 {
     }
 
     public static void main(String[] args) {
-        Main2 T = new Main2();
+        Main3 T = new Main3();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];
