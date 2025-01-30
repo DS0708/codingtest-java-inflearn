@@ -2,11 +2,14 @@ package SortingAndSearching.중복확인;
 
 import java.util.*;
 
-public class Main {
+public class Main{
+    public String solution(int[] arr) {
+        String answer = "U";
+        Set<Integer> set = new HashSet<>();
 
-    public List<Integer> solution(int[] arr) {
-        List<Integer> answer = new ArrayList<>();
+        for(int x : arr) set.add(x);
 
+        if(set.size() != arr.length) answer = "D";
 
         return answer;
     }
@@ -17,6 +20,7 @@ public class Main {
         int n = scanner.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) arr[i] = scanner.nextInt();
-        for(int x : T.solution(arr)) System.out.println(x+" ");
+        System.out.println(T.solution(arr));
+
     }
 }
